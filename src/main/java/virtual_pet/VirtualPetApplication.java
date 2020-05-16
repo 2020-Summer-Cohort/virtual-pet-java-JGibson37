@@ -34,7 +34,7 @@ public class VirtualPetApplication {
             } else if (getAction == 4) {
                 virtualPet.rest();
                 System.out.println("Nightmare got some rest. She feels refreshed.");
-            } else if (getAction == 5){
+            } else if (getAction == 5) {
                 System.out.println("Nightmare's skin is white, while her mane and tail are purple. /n" +
                         "she has a picture of a cup of Java on her flank.");
             }
