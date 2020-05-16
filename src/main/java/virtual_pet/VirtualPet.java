@@ -7,20 +7,27 @@ public class VirtualPet {
     private int desireToSleep = 5;
 
     public void tick() {
-        desireToPlay = desireToPlay + 7;
-        desireToEat = desireToEat + 9;
-        desireToDrink = desireToDrink + 3;
+        desireToPlay = desireToPlay + 6;
+        desireToEat = desireToEat + 6;
+        desireToDrink = desireToDrink + 6;
         desireToSleep = desireToSleep + 6;
 
     }
 
     public int play() {
-        desireToPlay = desireToPlay - 15;
+        desireToPlay = desireToPlay - 25;
+        desireToSleep = desireToSleep + 4;
         return desireToPlay;
     }
 
     public int getHunger() {
-    return desireToEat;
+        return desireToEat;
+    }
+
+    public int eat() {
+        desireToEat = desireToEat - 30;
+        desireToDrink = desireToDrink +3;
+        return desireToEat;
     }
 
     public int getThirst() {
@@ -28,18 +35,20 @@ public class VirtualPet {
 
     }
 
-    void getBoredom() {
-
+    public int drink() {
+        desireToDrink = desireToDrink - 22;
+        desireToEat = desireToEat + 2;
+        return desireToDrink;
     }
 
-    void getPlay() {
-
-    }
-
-   public int getDesireToPlay() {
+    public int getDesireToPlay() {
         return desireToPlay;
     }
-
+    public int rest(){
+        desireToSleep = desireToSleep - 30;
+        desireToPlay = desireToPlay + 10;
+        return desireToSleep;
+    }
     public int getTiredness() {
         return desireToSleep;
     }
