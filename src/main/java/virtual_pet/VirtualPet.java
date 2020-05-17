@@ -25,7 +25,7 @@ public class VirtualPet {
     }
 
     public int eat() {
-        desireToEat = desireToEat - 30;
+        desireToEat = desireToEat - 28;
         desireToDrink = desireToDrink + 3;
         return desireToEat;
     }
@@ -36,8 +36,8 @@ public class VirtualPet {
     }
 
     public int drink() {
-        desireToDrink = desireToDrink - 22;
-        desireToEat = desireToEat + 2;
+        desireToDrink = desireToDrink - 21;
+        desireToEat = desireToEat + 3;
         return desireToDrink;
     }
 
